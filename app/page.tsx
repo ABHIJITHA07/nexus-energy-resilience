@@ -311,6 +311,29 @@ export default function OverviewPage() {
         </div>
         <ChartCaption question="What is the daily financial penalty of delaying resilience preparations?" />
       </Card>
+
+      {/* Walkthrough Video Card */}
+      <Card
+        title="2-Minute Product Walkthrough"
+        subtitle="See how NEXUS turns supply disruption uncertainty into a clear business decision."
+        borderVariant="default"
+        metaBadge={
+          <span className="text-[10px] font-mono font-bold text-accent bg-accent/15 px-2.5 py-0.5 rounded-full border border-accent/30 tracking-wider">
+            PRODUCT WALKTHROUGH
+          </span>
+        }
+      >
+        <div className="w-full relative aspect-video rounded-lg overflow-hidden border border-border-subtle bg-bg-tertiary">
+          <video
+            className="w-full h-full object-cover"
+            controls
+            preload="metadata"
+            src="/nexus-demo.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </Card>
     </div>
   );
 }
